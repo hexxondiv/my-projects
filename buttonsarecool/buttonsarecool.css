@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    display: block;
+    margin: auto;
+}
+
+span {
+    display: block;
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    background: linear-gradient(180deg,orange,#BB6400);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+span:hover {
+    color: white;
+    background: linear-gradient(180deg,#BB6400,orange);
+}

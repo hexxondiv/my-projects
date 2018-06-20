@@ -1,0 +1,137 @@
+body {
+    text-align: center;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+#box1 {
+    height: 200px;
+    width: 200px;
+    background: #fc3;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 200px;
+}
+
+.thing {
+    height: 200px;
+    width: 200px;
+    background: #ac3;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    border-top-left-radius: 200px;
+}
+
+button {
+    background: #933;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.notification-bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.notification-bar a {
+    color: #fc3;
+}
+
+.hidden {
+    display: none;
+}
+
+#navArrows {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 100px auto 0;
+    background: #333;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.navigationArrow {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    color: #222;
+}
+
+#up {
+    left: 50%;
+    margin-left: -25px;
+}
+
+#left, #right {
+    top: 50%;
+    margin-top: -25px;
+}
+
+#right {
+    right: 20px;
+    left: inherit;
+}
+
+#down {
+    bottom: 20px;
+    top: inherit;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: #a7f;
+    color: white;
+    border: solid 4px #a1f;
+    line-height: 100px;
+    margin: 100px auto 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+#circle1 {
+    display: inline-block;
+    background: #8a8d22;
+    color: white;
+    text-align: center;
+    line-height: 140px;
+    height: 140px;
+    width: 140px;
+    margin: 40px;
+    z-index: 1;
+}
+
+.circleShape {
+    border-radius: 100%;
+}
+
+.drpdwn {
+    position: relative;
+    display: none;
+    z-index: 2;
+}
+

@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hotels.ng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/hotels.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<nav class="navbar-section nav-pills">
+    <div class="navbar-left">
+        <div class="navbar-brand">
+            <a href="#"><img style="margin:5px" src="img/hotel.png" alt="Hotels.ng" width="131" height="48"></a>
+        </div>
+    </div>
+    <div class="navbar-right">
+        <div class="nav-button">
+            <button class="btn btn-outline-info" style="margin-right: 5px">Sign up</button>
+        </div>
+        <div class="nav-button">
+            <button class="btn btn-outline-info">Log in</button>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</nav>
+<div class="jumbotron banner">
+    <div class="blur">
+        <div class="hform">
+            <h1>Find and Book Hotels in Nigeria</h1>
+            <h4 style="text-shadow: 0.5px 1px 3px black">Search through 10,222 hotels in Nigeria.</h4>
+        </div>
+        <div class="forms">
+            <form class="search form-check-inline form-control-lg">
+                <div class="search-field">
+                    <input class="form-control-md" type="text" placeholder="Search for a city or a particular hotel">
+                </div>
+                <div class="check-in">
+                    <input class="form-control-md" type="date" placeholder="Check in">
+                </div>
+                <div class="check-out">
+                    <input class="form-control-md" type="date" placeholder="Check out">
+                </div>
+                <button id="find" class="btn btn-info btn-md">Find Hotels</button>
+            </form>
+        </div>
+    </div> <!--blur container-->
+</div> <!--banner -->
+    <div class="container">
+        <h3 class="sub-heading text-center" style="color: #084482;font-size: 30px;font-weight: 400; padding: 10px ">
+                Today's Top Deals
+        </h3>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="deals row" >
+                    <div class="deal1 carousel-item active" >
+                        <img src="img/deal1.png" alt="first deal" width="1080" height="620.372" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <ul style="list-style: none">
+                                <li><a href="#"  style="text-decoration:none; color:white;"><h5>Hatifield Apartments</h5></a></li>
+                                <li><link rel="stylesheet" href="../css/bootstrap.css"><a href="#"  style="text-decoration:none; color:white;"><p>Jari, Abuja</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="deal2 carousel-item" >
+                        <img src="img/deal2.png" alt="second deal" width="1080" height="620.372" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <ul style="list-style: none">
+                                <li><a style="text-decoration:none; color:white;" href="#"><h5>Pelican Internatinale Hotel</h5></a></li>
+                                <li><a href="#"  style="text-decoration:none; color:white;"><p>Lekki, Lagos</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="deal3 carousel-item" >
+                        <img src="img/deal3.png" alt="third deal" width="1080" height="620.372" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <ul style="list-style: none">
+                                <li><a href="#"  style="text-decoration:none; color:white;"><h5>Lagoon Crest Hotel</h5></a></li>
+                                <li><a href="#"  style="text-decoration:none; color:white;"><p>Lekki, Lagos</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-contol-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-contol-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+            <div class="locations">
+                <h5 class="sub-heading text-center hidden-xs" style="color: #084482;font-size: 30px; font-weight: 400;">
+                    Popular cities with Hotels.ng travellers
+                </h5>
+                <h6 class="text-center" style="color: #9fa7ad;">
+                    See the top destinations people are traveling to
+                </h6>
+                <div class="cities container">
+                    <div class="row top-cities">
+                            <div class="col-sm-6 col-xs-12 lagos">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Lagos</h3></li>
+                                        <li>2303 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <div class="col-sm-3 col-xs-12 kano-owerri">
+                            <div class="kano">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Kano</h3></li>
+                                        <li>107 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="owerri">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Owerri</h3></li>
+                                        <li>160 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-3 ibadan-port">
+                            <div class="ibadan">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Ibadan</h3></li>
+                                        <li>388 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="port">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Port Harcourt</h3></li>
+                                        <li>352 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bottom-cities">
+                        <div class="col-sm-3 cal-uyo">
+                            <div class="calabar">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Calabar</h3></li>
+                                        <li>273 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uyo">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Uyo</h3></li>
+                                        <li>168 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 abuja">
+                            <div class="trans">
+                                <ul>
+                                    <li><h3>Abuja</h3></li>
+                                    <li>823 hotels</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 benin-ogun">
+                            <div class="benin">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Benin</h3></li>
+                                        <li>199 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ogun">
+                                <div class="trans">
+                                    <ul>
+                                        <li><h3>Ogun</h3></li>
+                                        <li>602 hotels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container sub-main1 text-center">
+            <h3 style="color: #084482;font-size: 24px;font-weight: 400;">
+                10,222 hotels in 1,787 cities in Nigeria
+            </h3>
+            <p>
+                Abia (225) Abuja (823) Adamawa (45) Akwa Ibom (417) Anambra (242)
+                Bauchi (41) Bayelsa (171) Benue (280) Borno (19) Cross River (346)
+                Delta (542) Ebonyi (72) Edo (287) Ekiti (214) Enugu (279) Gombe (32)
+                Imo (243) Jigawa (29) Kaduna (258) Kano (107) Katsina (24) Kebbi (24)
+                Kogi (228) Kwara (295) Lagos (2303) Nasarawa (205) Niger (93) Ogun (602)
+                Ondo (188) Osun (250) Oyo (519) Plateau (266) Rivers (422) Sokoto (15)
+                Taraba (85) Yobe (6) Zamfara (22)
+            </p>
+        </div>
+    </div>  <!--container -->
+    <div class="submain2 text-center">
+        <h3 style="color: #084482;font-size: 24px;font-weight: 400;">
+            Shhh.... Don't tell anyone
+        </h3>
+        <p>
+            Enter your email address to receive secret hotel deals
+        </p>
+        <form class="form-inline dform">
+            <div class>
+                <input class="form-control-sm mail" type="email" name="mail" placeholder="Enter your e-mail address">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary lbutton">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+<script src="../jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+        </div>
+</body>
+</html>

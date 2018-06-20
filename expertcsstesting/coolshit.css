@@ -1,0 +1,37 @@
+* {
+    font-size: 30px;
+}
+
+#container {
+    font-family: Helvetica, monospace;
+    width: 500px;
+    height: 500px;
+    font-weight: bolder;
+    background: yellow;
+    padding: 200px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    box-shadow: -10px 10px black;
+    text-shadow: 2px 2px black;
+    border-radius: 20px;
+}
+
+body a #container {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    left: 355px;
+    top: 50px;
+}
+
+#container:hover,
+a:active {
+    background: black;
+    color: yellow;
+    box-shadow: -10px 10px grey;
+    text-shadow: 2px 2px grey;    
+}
+
+
+
